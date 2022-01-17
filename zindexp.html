@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica del z-index</title>
+  <style>
+    .container {
+      position: relative;
+      width: 1000px;
+      height: 1000px;
+      background: grey;
+      padding: 120px;
+      text-align: center;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .red{
+      background: red;
+      z-index: 5;
+      top: 190px;
+      left: 25px;
+      position: absolute;
+    }
+    .blue{
+      background: blue;
+      z-index: 4;
+      position: absolute;
+    }
+    .yellow{
+      background: yellow;
+      z-index: 6;
+      top: 100px;
+      left: 45px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="red">😄</div>
+    <div class="blue">
+      😞
+      <div class="yellow">😢</div>
+    </div>
+  </section>
+</body>
+</html>
