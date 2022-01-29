@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectores combinadores</title>
+  <style>
+    /* Aplica estilos a todos las etiquetas p que encuentra en div */
+    div p {
+      color: lime
+    }  
+    /* Todos los div hijos de primer nivel */
+    div > div {
+      background: peru;
+    }
+
+    .hello {
+      background: red;
+    }
+    /* Solo se pinta el primer hermano section que esta a continuacion de un div */
+    div + section {
+      background: mediumblue;
+    }
+    /*Todos los hermanos p que esten a continuación de un div, se les aplicara estilo*/
+    div ~ p {
+      color: red
+    }
+  </style>
+</head>
+<body>
+  <!-- <div>
+    <p>Developer</p>
+    <p>Javascript</p>
+    <p>Fullstack</p>
+    <div>
+      <div>
+        <p>Un parrafo oculto</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>Hola mundo</p>
+      <div class="hello">Hello world</div>
+    </div>
+  </div> -->
+  <div>
+    Master
+  </div>
+  <p>Clase de selectores</p>
+  <div>
+    <p>Hello</p>
+  </div>
+  <p>Clase de selectores</p>
+  <div>
+    <div>
+      <p>No te pintes</p>
+    </div>
+    <div>
+      No te pintes
+    </div>
+  </div>
+</body>
+</html>
