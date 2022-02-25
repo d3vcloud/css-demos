@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keywords especiales</title>
+  <style>
+    .contenedor {
+      border: 5px solid #e1bee7;
+      background-color: #fff1ff;
+      display: grid;
+      /*Cuando usamos repeat y auto-fit, debemos usar minmax*/
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .item {
+      border: 5px solid #00bcd4;
+      font-size: 2rem;
+    }
+
+    .contenedor-two {
+      border: 5px solid #e1bee7;
+      background-color: #fff1ff;
+      display: grid;
+      margin-top: 100px;
+      /*Cuando usamos repeat y auto-fill, debemos usar minmax*/
+      grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+  </div>
+  <div class="contenedor-two">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+  </div>
+</body>
+</html>
