@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background HTML</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* url('https://www.komar.de/en/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/S/H/SHX8-133_1568286487.jpg'); */
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-image: url('/img/clouds.jpeg');
+        /* move the image inside its container. We can use keywords(center,top,left)*/
+        background-position: center;
+        background-size: cover;
+        background-color: purple;
+        background-repeat: no-repeat;
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment */
+        background-attachment: fixed;
+        /* This property is not supported for old browsers: https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin */
+        background-origin: content-box;
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip */
+        /* background-clip: border-box; */
+      }
+
+      .container-two {
+        width: 100%;
+        height: 100vh;
+        /*URL POSITION / SIZE REPEAT ATTACHMENT*/
+        background: url('img/clouds.jpeg') center / cover no-repeat fixed;
+      }
+
+      p {
+        font-size: 5rem;
+      }
+      /* h1 {
+        font-size: 6rem;
+        background-clip: border-box;
+        background-color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container-two">
+      <!-- <h1>Hy from</h1> -->
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, nihil
+      excepturi, numquam dolores iusto suscipit unde voluptatibus, vitae minus
+      labore expedita maiores iste laboriosam autem? Fuga odio mollitia
+      repudiandae voluptates.<br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iure.
+      Praesentium libero dolore sint reiciendis, dolorum eaque, porro molestiae
+      assumenda mollitia suscipit et. Iure autem facere aliquid cum asperiores
+      ullam?
+      <br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iure.
+      Praesentium libero dolore sint reiciendis, dolorum eaque, porro molestiae
+      assumenda mollitia suscipit et. Iure autem facere aliquid cum asperiores
+      ullam?
+    </p>
+  </body>
+</html>
