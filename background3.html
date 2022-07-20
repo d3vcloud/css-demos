@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background 3</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 2rem;
+        padding: 0;
+      }
+
+      .box {
+        width: 100%;
+        height: 100vh;
+        /* position: relative; */
+        /* overflow: auto; */
+        background-image: url('https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?auto=format&fit=crop&w=690&q=80');
+        /* 🥳  BACKGROUND REPEAT
+        round: Repeat without cropping, compressing or streching it
+        repeat: Repeat as much, cropping as necessary
+        space: Repeat without cropping and spacing out */
+        background-repeat: no-repeat;
+        /* 
+        🥳  BACKGROUND POSITION
+        When we use lengths and percentages, this first is x-axis
+        while the second is y-axis
+        ❌  When CSS values are used, the order matters: 50% left 😕
+        ❌  Same axis simultaneously
+        We can also use three up to four parameters, but there are exceptions:
+        ❌  When he have three parameters, a CSS length or value can be the second or 
+        third parameter: 50% top right 🙁
+        ❌ With four parameters, the first two values can't be a CSS length or value:
+        88% 33% bottom left 😥
+        BTW, It can be used negative values like: right -15% bottom
+        */
+        background-position: center;
+        /* 
+        🥳  BACKGROUND SIZE
+        We can specify values where the first one is width and the second is height
+        auto: default value to maintain the aspect ratio
+        cover: cover the entire area of background. The image may stretched or cropped
+        contain: Sizes the image to fill the space without streching or cropping
+        */
+        background-size: contain;
+        /* 
+        🥳  BACKGROUND ATTACHMENT 
+        Give us the possibility to modify the fixed position of background image. 
+        Its default behavior is scroll. There are the following values:
+        fixed: fixes the position of background images to the viewport 
+        local:  fixes relative to the element's content. Background image move along
+        the space they occupy
+        */
+        background-attachment: local;
+        /* 
+        🥳  BACKGROUND ORIGIN 
+        */
+        /* 
+        🥳  BACKGROUND CLIP 
+        */
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 10rem;
+        padding: 1rem;
+        text-align: center;
+      }
+      /* p {
+        font-size: 3rem;
+      }
+
+      span {
+        position: absolute;
+        font-size: 3rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      CSS
+      <!-- <span class="content"
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quos
+        rerum quaerat ratione eos. Quisquam unde laudantium tempora, nemo
+        doloribus tempore quae ut! Dolorum dignissimos nesciunt sint? Neque,
+        maxime exercitationem. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Sint quos rerum quaerat ratione eos. Quisquam unde
+        laudantium tempora, nemo doloribus tempore quae ut! Dolorum dignissimos
+        nesciunt sint? Neque, maxime exercitationem. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sint quos rerum quaerat ratione eos.
+        Quisquam unde laudantium tempora, nemo doloribus tempore quae ut!
+        Dolorum dignissimos nesciunt sint? Neque, maxime exercitationem.
+        nesciunt sint? Neque, maxime exercitationem. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sint quos rerum quaerat ratione eos.
+        Quisquam unde laudantium tempora, nemo doloribus tempore quae ut!
+        Dolorum dignissimos nesciunt sint? Neque, maxime exercitationem.
+        nesciunt sint? Neque, maxime exercitationem. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sint quos rerum quaerat ratione eos.
+        Quisquam unde laudantium tempora, nemo doloribus tempore quae ut!
+        Dolorum dignissimos nesciunt sint? Neque, maxime exercitationem.
+        nesciunt sint? Neque, maxime exercitationem. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sint quos rerum quaerat ratione eos.
+        Quisquam unde laudantium tempora, nemo doloribus tempore quae ut!
+        Dolorum dignissimos nesciunt sint? Neque, maxime exercitationem.
+        nesciunt sint? Neque, maxime exercitationem. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sint quos rerum quaerat ratione eos.
+        Quisquam unde laudantium tempora, nemo doloribus tempore quae ut!
+        Dolorum dignissimos nesciunt sint? Neque, maxime exercitationem.</span
+      > -->
+    </div>
+    <!-- <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+      obcaecati quos eum ipsam aliquam quia quas quisquam sit consequatur
+      numquam provident vero, asperiores quod porro dolorem possimus non
+      officiis dolorum? Maiores, quisquam necessitatibus ipsam numquam a dolor
+      non perferendis consectetur iste explicabo quia praesentium porro
+      cupiditate totam nemo alias sed eum impedit rem exercitationem voluptate
+      vel tempore. Impedit, accusantium reiciendis? Ex maiores voluptatibus qui,
+      nisi quibusdam ut tenetur modi repudiandae consequatur doloremque illum,
+      excepturi explicabo deleniti. Commodi obcaecati aperiam ipsum deserunt
+      soluta consectetur, tempore voluptatibus similique! Minima veritatis quam
+      obcaecati! Porro assumenda, dolorum iure molestiae nisi inventore
+      molestias doloribus ipsum repellendus atque omnis aliquid nihil,
+      accusantium ducimus iste adipisci quidem, sit necessitatibus sunt
+      accusamus fuga! Voluptates praesentium aspernatur fuga accusamus.
+      Praesentium nesciunt animi ex itaque minus quis totam labore eligendi
+      assumenda, sit sunt ad nihil tenetur incidunt facere iusto dolorem
+      consectetur voluptas nam reprehenderit quo ratione repellendus? Animi,
+      unde exercitationem? Eius repellat saepe esse quod inventore dolore,
+      magnam maiores alias repellendus nisi itaque magni iusto quam, incidunt
+      autem facilis aut hic fuga quo impedit quis! Magnam alias beatae
+      laboriosam officiis. Esse possimus itaque fugit enim autem ea quo, amet,
+      reiciendis nisi error voluptatem iste perspiciatis recusandae. Quod qui
+      distinctio eius aperiam amet beatae ut excepturi ipsam natus? Expedita,
+      esse accusamus! Accusantium aperiam corrupti consequatur, culpa placeat
+      impedit dolorum dolorem mollitia, aliquam officia quidem dolores non, ad
+      minus hic eveniet ducimus distinctio consequuntur accusamus autem nam!
+      Suscipit consequuntur voluptatibus reiciendis dolorem. Dignissimos
+      consequatur tenetur explicabo minus inventore! Tempora provident
+      cupiditate officia placeat beatae quibusdam tempore delectus, aut at?
+      Consectetur commodi at quibusdam unde, atque nihil iure vitae natus
+      voluptate aspernatur itaque! In sed totam expedita perferendis quis,
+      consequuntur nisi, cum rerum odio, architecto necessitatibus deleniti?
+      Omnis repellat illo at voluptas officia maxime magnam repellendus quas,
+      iste, suscipit debitis fugiat asperiores cum!
+    </p> -->
+  </body>
+</html>
