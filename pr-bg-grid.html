@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicing with Background and Grid</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 15rem;
+        gap: 1rem;
+        /* place-items: center; */
+      }
+
+      .item {
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        outline: 1px solid blue;
+        position: relative;
+      }
+
+      .container p {
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: fit-content;
+        height: auto;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+      }
+
+      .item:nth-child(1) {
+        background-image: url(/img/simpsons/bart.jpeg);
+        background-position: top left;
+      }
+
+      .item:nth-child(2) {
+        background-image: url(/img/simpsons/homer.jpeg);
+        background-position: center;
+      }
+
+      .item:nth-child(3) {
+        background-image: url(/img/simpsons/lisa.jpeg);
+        background-position: right;
+      }
+
+      .item:nth-child(4) {
+        background-image: url(/img/simpsons/marge.jpeg);
+        background-position: left 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <p class="name">Bart</p>
+      </div>
+      <div class="item">
+        <p class="name">Homero</p>
+      </div>
+      <div class="item">
+        <p class="name">Lisa</p>
+      </div>
+      <div class="item">
+        <p class="name">Marge</p>
+      </div>
+    </div>
+  </body>
+</html>
