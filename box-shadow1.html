@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow Introduction</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .box {
+        background-color: darkcyan;
+        width: 300px;
+        padding: 50px;
+        color: red;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* border-radius: 30px; */
+        /* Receives two obligatory values: Offeset X and Offset Y */
+        /* 
+        🦈 Third value blur-radius: desenfoque. We can apply a color by setting the last value. 
+          Ex: 5px 5px 10px blue
+          It can not take negative values
+         
+        🦈 Fourth value spread-radius: How expand the shadow or it is like giving a padding 
+          It can take negative values
+        
+        🦈 Fifth value inset: Sombra se dibujar por dentro o por fuera: Ej: inset -5px -5px 10px 0 #111
+          Hay que tener en cuenta que inset tomará los valores al "reves". Ej: 
+          Sin inset: 5px 5px 10px 0 #111;
+          Con inset inset -5px -5px 10px 0 #111;
+        
+        👀 Podemos definir varias sombres y lo bueno es que no ocupan sitio ni hay limites */
+        /* No consumimos espacio en el box model */
+        /* Las sombran se dibujan en el orden en que están */
+        /* box-shadow: 5px 5px 10px red, 15px 15px 25px blue, 25px 25px peru; */
+        box-shadow: 20px 20px 20px -20px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+  </body>
+</html>
