@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn about fourth value</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/halftone-yellow.png');
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        min-height: 100vh;
+        display: grid;
+        padding: 3em;
+        place-items: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      code {
+        background: rgba(black, 0.15);
+        padding: 0.1em 0.2em;
+        border-radius: 0.1em;
+      }
+
+      .box {
+        background: white;
+        padding: 2em;
+        position: relative;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        transition: transform 300ms, box-shadow 300ms;
+        position: relative;
+      }
+
+      .inner-box {
+        padding: 0.25em;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        background: white;
+        bottom: -25px;
+      }
+
+      .box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>A lonely box</p>
+      <div class="inner-box">hello :)</div>
+    </div>
+  </body>
+</html>

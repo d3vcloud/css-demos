@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn about third value</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/halftone-yellow.png');
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+        padding: 3em;
+        place-items: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      code {
+        background: rgba(black, 0.15);
+        padding: 0.1em 0.2em;
+        border-radius: 0.1em;
+      }
+
+      .box {
+        background: white;
+        padding: 2em;
+        position: relative;
+      }
+
+      .box--lower {
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+      }
+
+      .box--higher {
+        box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box--higher">
+      <p>This box is higher than the other one</p>
+    </div>
+
+    <div class="box box--lower">
+      <p>This box is lower than the other one</p>
+    </div>
+  </body>
+</html>
